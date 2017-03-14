@@ -13,6 +13,10 @@ import Feature from './components/feature';
 import RequireAuth from './components/auth/require_auth';
 import Welcome from './components/welcome';
 import reducers from './reducers';
+import {
+  AUTH_USER
+} from './actions/types';
+
 
 const createStoreWithMiddleware = applyMiddleware(thunk)(createStore);
 
